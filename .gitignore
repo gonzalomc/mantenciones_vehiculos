@@ -1,0 +1,9 @@
+# Created by http://www.gitignore.io
+
+### Laravel ###
+/bootstrap/compiled.php
+/vendor
+.env.local.php
+.env.php
+composer.phar
+composer.lock
