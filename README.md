@@ -1,4 +1,3 @@
-mantenciones_vehiculos
-======================
+## Pequeño sistema para agregar vehículos y mantenciones 
 
-Pequeño sistema para el ingreso de vehículos y mantenciones
+Desarrollado con laravel 4.1 + Mysql 
