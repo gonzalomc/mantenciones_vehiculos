@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+@yield('html')
     
     <head>
         <title>Admin Home Page</title>
@@ -20,6 +20,7 @@
         <script src="assets/scripts.js"></script>
         <script src="assets/moment.js"></script>
         <script src="assets/pikaday.js"></script>
+        
     </head>
     
     <body>
@@ -43,7 +44,7 @@
                                     </li>
                                     <li class="divider"></li>
                                     <li>
-                                        <a tabindex="-1" href="login.html">Logout</a>
+                                        <a tabindex="-1" href="/logout">Logout</a>
                                     </li>
                                 </ul>
                             </li>
@@ -238,7 +239,7 @@
 
             <hr>
             <footer>
-                <p>&copy; FerMati @2014</p>
+                <p>&copy; @gonzalo_mc @2014</p>
             </footer>
         </div>
         <!--/.fluid-container-->

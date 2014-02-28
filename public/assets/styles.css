@@ -15,7 +15,8 @@ body {
 
 /** Login Page **/
 #login {
-    padding-top: 40px;
+    background-image: url('../images/login_back.jpg');
+    padding-top: 200px;
     padding-bottom: 40px;
 }
 
@@ -23,8 +24,8 @@ body {
     max-width: 300px;
     padding: 19px 29px 29px;
     margin: 0 auto 20px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 6px solid rgba(0, 0, 0, 0.4);
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;

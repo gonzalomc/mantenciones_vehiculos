@@ -13,11 +13,30 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Redirect::to('login');
 });
 
 
+/*
+	Rutas para el Login
+*/
+Route::get('login', 'AuthenticationController@login');
 
-Route::resource('vehicles', 'VehiclesController');
+Route::post('login', 'AuthenticationController@auth');
 
-Route::resource('reviews', 'ReviewsController');
+Route::get('logout', function(){
+	Auth::logout();
+	return Redirect::to('login');
+});
+
+/*
+	Rutas del sistema filtradas para usuarios logueados
+*/
+
+Route::group(array('before'=>'auth'), function(){
+
+	Route::resource('vehicles', 'VehiclesController');
+	Route::resource('reviews', 'ReviewsController');
+
+});
+
