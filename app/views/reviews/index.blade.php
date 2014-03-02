@@ -57,19 +57,19 @@
 		<table class="table table-bordered table-striped">
 			<thead>
 				<tr>
+					<th>Estado</th>
 					<th>Vehículo</th>
 					<th>Fecha Mantención</th>
-					<th>Descripción</th>
-					<th>Status</th>
+					<th>Descripción</th>					
 				</tr>
 			</thead>
 			<tbody>
 				@foreach($reviews as $review)
 					<tr>
+						<td><span class="label label-warning">Pendiente</span></td>
 						<td>{{ $review->vehicle->patent }}</td>
 						<td>{{ $review->date }}</td>
-						<td>{{ $review->description }}</td>
-						<td></td>
+						<td>{{ $review->description }}</td>						
 					</tr>
 				@endforeach
 			</tbody>

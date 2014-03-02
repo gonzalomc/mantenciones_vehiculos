@@ -17,6 +17,13 @@
       <div class="row-fluid">
       <form action="login" method="POST"  class="form-signin">
         <h4>Favor, ingrese sus datos</h4><hr />
+        
+        @if(Session::has('message'))
+            <div class="alert alert-error">
+              <strong>{{ Session::get('message') }}</strong>
+            </div> 
+        @endif  
+        
         <input name="email" type="text" class="input-block-level" placeholder="Email">
         <input name="password" type="password" class="input-block-level" placeholder="Password">
         <br /><br />

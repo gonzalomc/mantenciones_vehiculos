@@ -9,11 +9,12 @@ class AuthenticationController extends BaseController{
 	}
 
 	public function auth(){
+		$input = Input::all();
 		if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')))){
 		    return Redirect::intended('vehicles');
 		}
 		else{
-			return Redirect::intended('login');
+			return Redirect::to('login')->with('message','Error al ingresar los datos')->withInput();
 		}
 	}
 }
