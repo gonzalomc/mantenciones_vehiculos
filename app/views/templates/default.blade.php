@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-@yield('html')
+<html lang="es">
     
     <head>
         <title>Admin Home Page</title>
@@ -36,7 +36,7 @@
                         <ul class="nav pull-right">
                             <li class="dropdown">
                                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> 
-                                <img src="images/user.png" alt="" class="img-circle" width="21px">&nbsp;<small>{{ Auth::user()->email }}</small><i class="caret"></i>
+                                <img src="images/user.png" alt="" class="img-circle" width="21px">&nbsp;<small class="user">{{ Auth::user()->email }}</small><i class="caret"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -50,9 +50,11 @@
                             </li>
                         </ul>
                         <ul class="nav">
+                            <!--
                             <li class="active">
-                                <a href="#">Dashboard</a>
+                                <a href="#">Inicio</a>
                             </li>
+                            
                             <li class="dropdown">
                                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b>
 
@@ -128,6 +130,7 @@
                                     </li>
                                 </ul>
                             </li>
+                            -->
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -205,8 +208,8 @@
                 
                 <!--/span-->
 
-                <!-- BreadCrumbs  -->
-                @yield('breadcrumbs')
+                <!-- BreadCrumbs  
+                @yield('breadcrumbs')-->
                 <!--
                 <div class="span9" id="content">
                     <div class="row-fluid">

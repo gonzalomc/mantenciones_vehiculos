@@ -1,29 +1,9 @@
 @extends('templates.default')
 
-@section('breadcrumbs')
-	<div class="span9" id="content">
-        <div class="row-fluid">
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <ul class="breadcrumb">
-                        <i class="icon-chevron-left hide-sidebar"><a href='#' title="Hide Sidebar" rel='tooltip'>&nbsp;</a></i>
-                        <i class="icon-chevron-right show-sidebar" style="display:none;"><a href='#' title="Show Sidebar" rel='tooltip'>&nbsp;</a></i>
-                        <li>
-                            <a href="#">Manteciones</a> <span class="divider">/</span>    
-                        </li>
-                        <li>
-                            <a href="#">Lista</a> <span class="divider">/</span> 
-                        </li>                 
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-@stop
-
 @section('content')
 	<div class="row-fluid">
-		<div class="span12">
+		<h3>Lista de Mantenciones</h3><hr />
+		<div class="span12 text-right">
 			<a href="#myAlert" data-toggle="modal" class="btn btn-info">Agregar nueva mantención</a>
 		</div>
 

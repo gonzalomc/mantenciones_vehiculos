@@ -88,7 +88,8 @@ class VehiclesController extends BaseController {
 	 */
 	public function show($id)
 	{
-        return View::make('vehicles.show');
+        $vehicle = Vehicle::find($id);
+        return $vehicle;
 	}
 
 	/**
